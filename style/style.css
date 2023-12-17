@@ -66,12 +66,14 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  overflow: hidden;
 }
 #projects .chevrons {
   display: flex;
   align-items: center;
   cursor: pointer;
   position: relative;
+  z-index: 2;
 }
 #projects .chevrons .chevron-left {
   position: absolute;
@@ -100,14 +102,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.5s ease-in-out;
+  flex: 0 0 100%;
 }
 #projects .cards .card .mok-up {
   display: flex;
   width: 40%;
   height: 55%;
   border-radius: 8px;
-  background-image: url(/assets/mok-up-foodies.png);
+  background-image: url(/assets/mok-up-music-dashboard.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -137,7 +139,13 @@
   height: 45%;
   border-radius: 0px 12px 12px 0px;
   background: var(--primary-bg);
-  transition: width 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+}
+#projects .cards .card .card-container.hide-card-container {
+  animation: hideCardContainer 1s forwards;
+}
+#projects .cards .card .card-container.show-card-container {
+  animation: showCardContainer 1s forwards;
 }
 #projects .cards .card .card-container .card-content-container {
   position: relative;
@@ -222,30 +230,54 @@
   font-size: 14px;
   font-weight: 500;
 }
-#projects .cards .foodies {
-  display: none;
+#projects .cards .animation-css,
+#projects .cards .challenge-bootstrap,
+#projects .cards .foodies,
+#projects .cards .jessica-aroztegui,
+#projects .cards .marshall,
+#projects .cards .recipe-js,
+#projects .cards .switch-playground,
+#projects .cards .travee {
+  display: flex;
 }
-#projects .cards .jessica {
-  display: none;
+#projects .cards .animation-css .mok-up {
+  background-image: url();
 }
-#projects .cards .jessica .mok-up {
-  background-image: url(/assets/mok-up-jessica.png);
+#projects .cards .challenge-bootstrap .mok-up {
+  background-image: url();
 }
 #projects .cards .music-dashboard {
   display: flex;
 }
 #projects .cards .music-dashboard .mok-up {
-  background-image: url(/assets/mok-up-music-dashboard.png);
   background-color: #121216;
   background-size: contain;
 }
+#projects .cards .foodies .mok-up {
+  background-image: url(/assets/mok-up-foodies.png);
+}
+#projects .cards .jessica-aroztegui .mok-up {
+  background-image: url(/assets/mok-up-jessica.png);
+}
+#projects .cards .marshall .mok-up {
+  background-image: url(/assets/mok-up-marshall.png);
+}
+#projects .cards .recipe-js .mok-up {
+  background-image: url();
+}
+#projects .cards .switch-playground .mok-up {
+  background-image: url();
+}
+#projects .cards .travee .mok-up {
+  background-image: url();
+}
 
 .hide-card-container {
-  animation: hideCardContainer 1s forwards;
+  transform: translateX(-100%);
 }
 
 .show-card-container {
-  animation: showCardContainer 1s forwards;
+  transform: translateX(0);
 }
 
 @keyframes hideCardContainer {

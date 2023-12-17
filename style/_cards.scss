@@ -7,12 +7,14 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  overflow: hidden;
 
   & .chevrons {
     display: flex;
     align-items: center;
     cursor: pointer;
     position: relative;
+    z-index: 2;
 
     & .chevron-left {
       position: absolute;
@@ -44,14 +46,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: transform 0.5s ease-in-out;
+      flex: 0 0 100%;
 
       & .mok-up {
         display: flex;
         width: 40%;
         height: 55%;
         border-radius: 8px;
-        background-image: url(/assets/mok-up-foodies.png);
+        background-image: url(/assets/mok-up-music-dashboard.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -84,7 +86,15 @@
         height: 45%;
         border-radius: 0px 12px 12px 0px;
         background: var(--primary-bg);
-        transition: width 0.5s ease-in-out;
+        transition: transform 0.5s ease-in-out;
+
+        &.hide-card-container {
+          animation: hideCardContainer 1s forwards;
+        }
+
+        &.show-card-container {
+          animation: showCardContainer 1s forwards;
+        }
 
         & .card-content-container {
           position: relative;
@@ -182,15 +192,26 @@
       }
     }
 
-    .foodies {
-      display: none;
+    .animation-css,
+    .challenge-bootstrap,
+    .foodies,
+    .jessica-aroztegui,
+    .marshall,
+    .recipe-js,
+    .switch-playground,
+    .travee {
+      display: flex;
     }
 
-    .jessica {
-      display: none;
-
+    .animation-css {
       & .mok-up {
-        background-image: url(/assets/mok-up-jessica.png);
+        background-image: url();
+      }
+    }
+
+    .challenge-bootstrap {
+      & .mok-up {
+        background-image: url();
       }
     }
 
@@ -198,20 +219,55 @@
       display: flex;
 
       & .mok-up {
-        background-image: url(/assets/mok-up-music-dashboard.png);
         background-color: #121216;
         background-size: contain;
+      }
+    }
+
+    .foodies {
+      & .mok-up {
+        background-image: url(/assets/mok-up-foodies.png);
+      }
+    }
+
+    .jessica-aroztegui {
+      & .mok-up {
+        background-image: url(/assets/mok-up-jessica.png);
+      }
+    }
+
+    .marshall {
+      & .mok-up {
+        background-image: url(/assets/mok-up-marshall.png);
+      }
+    }
+
+    .recipe-js {
+      & .mok-up {
+        background-image: url();
+      }
+    }
+
+    .switch-playground {
+      & .mok-up {
+        background-image: url();
+      }
+    }
+
+    .travee {
+      & .mok-up {
+        background-image: url();
       }
     }
   }
 }
 
 .hide-card-container {
-  animation: hideCardContainer 1s forwards;
+  transform: translateX(-100%);
 }
 
 .show-card-container {
-  animation: showCardContainer 1s forwards;
+  transform: translateX(0);
 }
 
 @keyframes hideCardContainer {
