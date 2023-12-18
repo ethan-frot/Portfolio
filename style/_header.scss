@@ -23,7 +23,7 @@ header {
   align-items: center;
   padding: 24px 64px 0px 64px;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
 
   & .nav-content {
     display: flex;
@@ -114,7 +114,7 @@ header {
       font-size: 70px;
       font-weight: 800;
       line-height: 70px;
-      letter-spacing: 4.6px;
+      letter-spacing: 5px;
     }
   }
 

@@ -192,26 +192,15 @@
       }
     }
 
-    .animation-css,
-    .challenge-bootstrap,
-    .foodies,
-    .jessica-aroztegui,
-    .marshall,
-    .recipe-js,
-    .switch-playground,
-    .travee {
-      display: flex;
-    }
-
     .animation-css {
       & .mok-up {
-        background-image: url();
+        background-image: url(/assets/mok-up-animation-css.jpeg);
       }
     }
 
     .challenge-bootstrap {
       & .mok-up {
-        background-image: url();
+        background-image: url(/assets/mok-up-challenge-bootstrap.png);
       }
     }
 
@@ -244,56 +233,26 @@
 
     .recipe-js {
       & .mok-up {
-        background-image: url();
+        background-image: url(/assets/mok-up-recipe-js.png);
+        background-color: #808080;
+        background-size: contain;
       }
     }
 
     .switch-playground {
       & .mok-up {
-        background-image: url();
+        background-image: url(/assets/mok-up-switch-playground.png);
+        background-color: #2f3731;
+        background-size: contain;
       }
     }
 
     .travee {
       & .mok-up {
-        background-image: url();
+        background-image: url(/assets/mok-up-travee.jpeg);
+        background-color: #d7ecff;
+        background-size: contain;
       }
     }
   }
-}
-
-.hide-card-container {
-  transform: translateX(-100%);
-}
-
-.show-card-container {
-  transform: translateX(0);
-}
-
-@keyframes hideCardContainer {
-  0% {
-    width: 35%;
-  }
-  50% {
-    width: 0%;
-  }
-  100% {
-    width: 0%;
-  }
-}
-
-@keyframes showCardContainer {
-  0% {
-    width: 0%;
-  }
-  50% {
-    width: 35%;
-  }
-  100% {
-    width: 35%;
-  }
-}
-
-.hidden {
-  display: none !important;
 }

@@ -10,6 +10,7 @@ const swiper = new Swiper(".swiper-container", {
     prevEl: ".chevron-left",
   },
   loop: true,
+  initialSlide: 2,
 });
 
 // Add event on click

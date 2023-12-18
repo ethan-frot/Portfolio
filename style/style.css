@@ -1,62 +1,5 @@
 /* All styles */
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.col-md-1 {
-  width: 8.3333333333%;
-}
-
-.col-md-2 {
-  width: 16.6666666667%;
-}
-
-.col-md-3 {
-  width: 25%;
-}
-
-.col-md-4 {
-  width: 33.3333333333%;
-}
-
-.col-md-5 {
-  width: 41.6666666667%;
-}
-
-.col-md-6 {
-  width: 50%;
-}
-
-.col-md-7 {
-  width: 58.3333333333%;
-}
-
-.col-md-8 {
-  width: 66.6666666667%;
-}
-
-.col-md-9 {
-  width: 75%;
-}
-
-.col-md-10 {
-  width: 83.3333333333%;
-}
-
-.col-md-11 {
-  width: 91.6666666667%;
-}
-
-.col-md-12 {
-  width: 100%;
-}
-
-[class*=col-] {
-  padding: 0 15px;
-}
-
 #projects {
   width: 100%;
   height: 100%;
@@ -230,21 +173,11 @@
   font-size: 14px;
   font-weight: 500;
 }
-#projects .cards .animation-css,
-#projects .cards .challenge-bootstrap,
-#projects .cards .foodies,
-#projects .cards .jessica-aroztegui,
-#projects .cards .marshall,
-#projects .cards .recipe-js,
-#projects .cards .switch-playground,
-#projects .cards .travee {
-  display: flex;
-}
 #projects .cards .animation-css .mok-up {
-  background-image: url();
+  background-image: url(/assets/mok-up-animation-css.jpeg);
 }
 #projects .cards .challenge-bootstrap .mok-up {
-  background-image: url();
+  background-image: url(/assets/mok-up-challenge-bootstrap.png);
 }
 #projects .cards .music-dashboard {
   display: flex;
@@ -263,47 +196,19 @@
   background-image: url(/assets/mok-up-marshall.png);
 }
 #projects .cards .recipe-js .mok-up {
-  background-image: url();
+  background-image: url(/assets/mok-up-recipe-js.png);
+  background-color: #808080;
+  background-size: contain;
 }
 #projects .cards .switch-playground .mok-up {
-  background-image: url();
+  background-image: url(/assets/mok-up-switch-playground.png);
+  background-color: #2f3731;
+  background-size: contain;
 }
 #projects .cards .travee .mok-up {
-  background-image: url();
-}
-
-.hide-card-container {
-  transform: translateX(-100%);
-}
-
-.show-card-container {
-  transform: translateX(0);
-}
-
-@keyframes hideCardContainer {
-  0% {
-    width: 35%;
-  }
-  50% {
-    width: 0%;
-  }
-  100% {
-    width: 0%;
-  }
-}
-@keyframes showCardContainer {
-  0% {
-    width: 0%;
-  }
-  50% {
-    width: 35%;
-  }
-  100% {
-    width: 35%;
-  }
-}
-.hidden {
-  display: none !important;
+  background-image: url(/assets/mok-up-travee.jpeg);
+  background-color: #d7ecff;
+  background-size: contain;
 }
 
 header {
@@ -327,7 +232,7 @@ header {
   align-items: center;
   padding: 24px 64px 0px 64px;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
 }
 .navbar .nav-content {
   display: flex;
@@ -403,7 +308,7 @@ header {
   font-size: 70px;
   font-weight: 800;
   line-height: 70px;
-  letter-spacing: 4.6px;
+  letter-spacing: 5px;
 }
 .header-container .illustrations .illustration {
   width: 100%;
