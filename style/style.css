@@ -1,216 +1,5 @@
 /* All styles */
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
-#projects {
-  width: 100%;
-  height: 100%;
-  max-height: 100vh;
-  background-image: url("/assets/star-background-svg.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  overflow: hidden;
-}
-#projects .chevrons {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  position: relative;
-  z-index: 2;
-}
-#projects .chevrons .chevron-left {
-  position: absolute;
-  top: 50vh;
-  left: 0;
-  margin-left: 30px;
-  width: 25px;
-}
-#projects .chevrons .chevron-right {
-  position: absolute;
-  top: 50vh;
-  right: 0;
-  margin-right: 30px;
-  width: 25px;
-}
-#projects .cards {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-}
-#projects .cards .card {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 0 0 100%;
-}
-#projects .cards .card .mok-up {
-  display: flex;
-  width: 40%;
-  height: 55%;
-  border-radius: 8px;
-  background-image: url(/assets/mok-up-music-dashboard.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, 0.5);
-  gap: 6px;
-  padding: 10px 0px 0px 10px;
-}
-#projects .cards .card .mok-up .logo-container {
-  display: flex;
-  width: 30px;
-  height: 30px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: var(--background--opactity);
-  border-radius: 6px;
-}
-#projects .cards .card .mok-up .logo-container .mok-up-logo {
-  max-width: 48px;
-  max-height: 42px;
-  display: flex;
-  padding: 10px;
-  gap: 10px;
-}
-#projects .cards .card .card-container {
-  width: 30%;
-  height: 45%;
-  border-radius: 0px 12px 12px 0px;
-  background: var(--primary-bg);
-  transition: transform 0.5s ease-in-out;
-}
-#projects .cards .card .card-container.hide-card-container {
-  animation: hideCardContainer 1s forwards;
-}
-#projects .cards .card .card-container.show-card-container {
-  animation: showCardContainer 1s forwards;
-}
-#projects .cards .card .card-container .card-content-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-}
-#projects .cards .card .card-container .card-content-container .frame {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  display: flex;
-  padding: 4px 14px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  background: var(--primary-main);
-}
-#projects .cards .card .card-container .card-content-container .frame p {
-  color: var(--secondary-main);
-  font-size: 12px;
-  font-weight: 300;
-}
-#projects .cards .card .card-container .card-content-container .card-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
-}
-#projects .cards .card .card-container .card-content-container .card-title h1 {
-  color: var(--secondary-main);
-  text-align: center;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 130%;
-}
-#projects .cards .card .card-container .card-content-container .card-title .card-title-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-}
-#projects .cards .card .card-container .card-content-container .card-title .card-title-content p {
-  color: var(--secondary-main-opacity);
-  text-align: center;
-  font-size: 14px;
-  font-weight: 500;
-}
-#projects .cards .card .card-container .card-content-container .card-content {
-  display: flex;
-  width: 130px;
-  height: 35px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#projects .cards .card .card-container .card-content-container .card-content a {
-  all: unset;
-  width: 100%;
-  height: 100%;
-}
-#projects .cards .card .card-container .card-content-container .card-content a button {
-  all: unset;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  border-radius: 6px;
-  background: var(--primary-main);
-  box-shadow: 0px 0px 3px 0px var(--primary-main);
-  cursor: pointer;
-}
-#projects .cards .card .card-container .card-content-container .card-content a button p {
-  color: var(--secondary-main);
-  font-size: 14px;
-  font-weight: 500;
-}
-#projects .cards .animation-css .mok-up {
-  background-image: url(/assets/mok-up-animation-css.jpeg);
-}
-#projects .cards .challenge-bootstrap .mok-up {
-  background-image: url(/assets/mok-up-challenge-bootstrap.png);
-}
-#projects .cards .music-dashboard {
-  display: flex;
-}
-#projects .cards .music-dashboard .mok-up {
-  background-color: #121216;
-  background-size: contain;
-}
-#projects .cards .foodies .mok-up {
-  background-image: url(/assets/mok-up-foodies.png);
-}
-#projects .cards .jessica-aroztegui .mok-up {
-  background-image: url(/assets/mok-up-jessica.png);
-}
-#projects .cards .marshall .mok-up {
-  background-image: url(/assets/mok-up-marshall.png);
-}
-#projects .cards .recipe-js .mok-up {
-  background-image: url(/assets/mok-up-recipe-js.png);
-  background-color: #808080;
-  background-size: contain;
-}
-#projects .cards .switch-playground .mok-up {
-  background-image: url(/assets/mok-up-switch-playground.png);
-  background-color: #2f3731;
-  background-size: contain;
-}
-#projects .cards .travee .mok-up {
-  background-image: url(/assets/mok-up-travee.jpeg);
-  background-color: #d7ecff;
-  background-size: contain;
-}
-
 header {
   height: 100%;
   max-height: 100vh;
@@ -328,9 +117,262 @@ header {
   width: 25px;
 }
 
+#projects {
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+  background-image: url("/assets/star-background-svg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+#projects .chevrons {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+#projects .chevrons .chevron-left {
+  position: absolute;
+  top: 50vh;
+  left: 0;
+  margin-left: 30px;
+  width: 25px;
+}
+#projects .chevrons .chevron-right {
+  position: absolute;
+  top: 50vh;
+  right: 0;
+  margin-right: 30px;
+  width: 25px;
+}
+#projects .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+#projects .cards .card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#projects .cards .card .mok-up {
+  display: flex;
+  width: 40%;
+  height: 55%;
+  border-radius: 8px;
+  background-image: url(/assets/mok-up-music-dashboard.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, 0.5);
+  gap: 6px;
+  padding: 10px 0px 0px 10px;
+}
+#projects .cards .card .mok-up .logo-container {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--background--opactity);
+  border-radius: 6px;
+}
+#projects .cards .card .mok-up .logo-container .mok-up-logo {
+  max-width: 48px;
+  max-height: 42px;
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+}
+#projects .cards .card .card-container {
+  width: 30%;
+  height: 45%;
+  border-radius: 0px 12px 12px 0px;
+  background: var(--primary-bg);
+  transition: transform 0.5s ease-in-out;
+}
+#projects .cards .card .card-container.hide-card-container {
+  animation: hideCardContainer 1s forwards;
+}
+#projects .cards .card .card-container.show-card-container {
+  animation: showCardContainer 1s forwards;
+}
+#projects .cards .card .card-container .card-content-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+#projects .cards .card .card-container .card-content-container .frame {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  padding: 4px 14px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: var(--primary-main);
+}
+#projects .cards .card .card-container .card-content-container .frame p {
+  color: var(--secondary-main);
+  font-size: 12px;
+  font-weight: 300;
+}
+#projects .cards .card .card-container .card-content-container .card-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+#projects .cards .card .card-container .card-content-container .card-title h1 {
+  color: var(--secondary-main);
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 130%;
+}
+#projects .cards .card .card-container .card-content-container .card-title .card-title-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+#projects .cards .card .card-container .card-content-container .card-title .card-title-content p {
+  color: var(--secondary-main-opacity);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+#projects .cards .card .card-container .card-content-container .card-content {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+}
+#projects .cards .card .card-container .card-content-container .card-content a {
+  text-decoration: none;
+}
+#projects .cards .card .card-container .card-content-container .card-content a button {
+  all: unset;
+  display: flex;
+  width: 120px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background: var(--primary-main);
+  box-shadow: 0px 0px 3px 0px var(--primary-main);
+  cursor: pointer;
+}
+#projects .cards .card .card-container .card-content-container .card-content a button p {
+  color: var(--secondary-main);
+  font-size: 14px;
+  font-weight: 500;
+}
+#projects .cards .animation-css .mok-up {
+  background-image: url(/assets/mok-up-animation-css.jpeg);
+}
+#projects .cards .challenge-bootstrap .mok-up {
+  background-image: url(/assets/mok-up-challenge-bootstrap.png);
+}
+#projects .cards .music-dashboard {
+  display: flex;
+}
+#projects .cards .music-dashboard .mok-up {
+  background-color: #121216;
+  background-size: contain;
+}
+#projects .cards .foodies .mok-up {
+  background-image: url(/assets/mok-up-foodies.png);
+}
+#projects .cards .jessica-aroztegui .mok-up {
+  background-image: url(/assets/mok-up-jessica.png);
+}
+#projects .cards .marshall .mok-up {
+  background-image: url(/assets/mok-up-marshall.png);
+}
+#projects .cards .recipe-js .mok-up {
+  background-image: url(/assets/mok-up-recipe-js.png);
+  background-color: #808080;
+  background-size: contain;
+}
+#projects .cards .switch-playground .mok-up {
+  background-image: url(/assets/mok-up-switch-playground.png);
+  background-color: #2f3731;
+  background-size: contain;
+}
+#projects .cards .travee .mok-up {
+  background-image: url(/assets/mok-up-travee.jpeg);
+  background-color: #d7ecff;
+  background-size: contain;
+}
+#projects .cards .eva-vr .mok-up {
+  background-image: url(/assets/mok-up-eva-vr.png);
+  background-color: #080524;
+  background-size: contain;
+}
+
+#about-me {
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+  background-image: url("/assets/star-background-svg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+#about-me .presentation {
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-top: 50px;
+  color: var(--secondary-main);
+}
+#about-me .presentation .presentation-subtitle {
+  background: var(--secondary-bg);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+#about-me .social-container {
+  width: 100%;
+  max-width: 950px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
 :root {
   --primary-main: #f92558;
   --secondary-main: #ffffff;
+  --secondary-main-opacity-8: rgba(255, 255, 255, 0.8);
   --secondary-main-opacity: rgba(255, 255, 255, 0.6);
   --primary-bg: #15141a;
   --secondary-bg: #2c2a37;
