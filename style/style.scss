@@ -95,3 +95,10 @@ main {
   width: 100%;
   background-color: var(--secondary-bg);
 }
+
+body {
+  background-image: url("/assets/star-background.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}

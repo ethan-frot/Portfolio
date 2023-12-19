@@ -3,17 +3,12 @@
 header {
   height: 100%;
   max-height: 100vh;
-  background-image: url("/assets/star-background-svg.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 64px;
 }
-
-.navbar {
+header .navbar {
   display: flex;
   background: linear-gradient(180deg, rgb(35, 33, 43) 0%, rgba(35, 33, 43, 0) 100%);
   width: 100%;
@@ -23,35 +18,35 @@ header {
   position: fixed;
   z-index: 2;
 }
-.navbar .nav-content {
+header .navbar .nav-content {
   display: flex;
   max-width: 1000px;
   width: 100%;
   justify-content: space-between;
   align-items: center;
 }
-.navbar .nav-content .header-logo {
+header .navbar .nav-content .header-logo {
   max-width: 64px;
   max-height: 64px;
 }
-.navbar .nav-content .nav-container {
+header .navbar .nav-content .nav-container {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
-.navbar .nav-content .nav-container .nav-items {
+header .navbar .nav-content .nav-container .nav-items {
   display: flex;
   gap: 48px;
   cursor: pointer;
 }
-.navbar .nav-content .nav-container .nav-items .nav-item {
+header .navbar .nav-content .nav-container .nav-items .nav-item {
   all: unset;
   color: var(--secondary-main);
   font-size: 18px;
   font-weight: 800;
   position: relative;
 }
-.navbar .nav-content .nav-container .nav-items .nav-item::before {
+header .navbar .nav-content .nav-container .nav-items .nav-item::before {
   content: "";
   position: absolute;
   width: 0%;
@@ -62,11 +57,11 @@ header {
   transition: width 0.3s ease, left 0.3s ease, opacity 0.3s ease;
   opacity: 0;
 }
-.navbar .nav-content .nav-container .nav-items .nav-item:hover::before {
+header .navbar .nav-content .nav-container .nav-items .nav-item:hover::before {
   width: 50%;
   opacity: 1;
 }
-.navbar .nav-content .nav-container .nav-items .nav-item:not(:hover)::before {
+header .navbar .nav-content .nav-container .nav-items .nav-item:not(:hover)::before {
   width: 0%;
   opacity: 0;
 }
@@ -121,10 +116,6 @@ header {
   width: 100%;
   height: 100%;
   max-height: 100vh;
-  background-image: url("/assets/star-background-svg.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
 }
@@ -199,13 +190,6 @@ header {
   height: 45%;
   border-radius: 0px 12px 12px 0px;
   background: var(--primary-bg);
-  transition: transform 0.5s ease-in-out;
-}
-#projects .cards .card .card-container.hide-card-container {
-  animation: hideCardContainer 1s forwards;
-}
-#projects .cards .card .card-container.show-card-container {
-  animation: showCardContainer 1s forwards;
 }
 #projects .cards .card .card-container .card-content-container {
   position: relative;
@@ -253,6 +237,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 12px;
+  margin: 0px 20px 0px 20px;
 }
 #projects .cards .card .card-container .card-content-container .card-title .card-title-content p {
   color: var(--secondary-main-opacity);
@@ -334,10 +319,6 @@ header {
   width: 100%;
   height: 100%;
   max-height: 100vh;
-  background-image: url("/assets/star-background-svg.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -367,6 +348,16 @@ header {
   justify-content: center;
   align-items: center;
   gap: 50px;
+}
+#about-me .social-container .github {
+  display: flex;
+  width: 64px;
+}
+#about-me .social-container .linkedin,
+#about-me .social-container .mail {
+  display: flex;
+  width: 32px;
+  height: 32px;
 }
 
 :root {
@@ -441,4 +432,11 @@ body,
 main {
   width: 100%;
   background-color: var(--secondary-bg);
+}
+
+body {
+  background-image: url("/assets/star-background.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
 }/*# sourceMappingURL=style.css.map */

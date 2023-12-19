@@ -1,82 +1,78 @@
 header {
   height: 100%;
   max-height: 100vh;
-  background-image: url("/assets/star-background-svg.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 64px;
-}
 
-.navbar {
-  display: flex;
-  background: linear-gradient(
-    180deg,
-    rgba(35, 33, 43, 1) 0%,
-    rgba(35, 33, 43, 0) 100%
-  );
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  padding: 24px 64px 0px 64px;
-  position: fixed;
-  z-index: 2;
-
-  & .nav-content {
+  & .navbar {
     display: flex;
-    max-width: 1000px;
+    background: linear-gradient(
+      180deg,
+      rgba(35, 33, 43, 1) 0%,
+      rgba(35, 33, 43, 0) 100%
+    );
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    padding: 24px 64px 0px 64px;
+    position: fixed;
+    z-index: 2;
 
-    & .header-logo {
-      max-width: 64px;
-      max-height: 64px;
-    }
-
-    & .nav-container {
+    & .nav-content {
       display: flex;
-      flex-direction: column;
-      gap: 4px;
+      max-width: 1000px;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
 
-      & .nav-items {
+      & .header-logo {
+        max-width: 64px;
+        max-height: 64px;
+      }
+
+      & .nav-container {
         display: flex;
-        gap: 48px;
-        cursor: pointer;
+        flex-direction: column;
+        gap: 4px;
 
-        & .nav-item {
-          all: unset;
-          color: var(--secondary-main);
-          font-size: 18px;
-          font-weight: 800;
-          position: relative;
+        & .nav-items {
+          display: flex;
+          gap: 48px;
+          cursor: pointer;
 
-          &::before {
-            content: "";
-            position: absolute;
-            width: 0%;
-            height: 4px;
-            top: 27px;
-            border-radius: 8px;
-            background: var(--secondary-main);
-            transition: width 0.3s ease, left 0.3s ease, opacity 0.3s ease;
-            opacity: 0;
-          }
+          & .nav-item {
+            all: unset;
+            color: var(--secondary-main);
+            font-size: 18px;
+            font-weight: 800;
+            position: relative;
 
-          &:hover {
             &::before {
-              width: 50%;
-              opacity: 1;
-            }
-          }
-
-          &:not(:hover) {
-            &::before {
+              content: "";
+              position: absolute;
               width: 0%;
+              height: 4px;
+              top: 27px;
+              border-radius: 8px;
+              background: var(--secondary-main);
+              transition: width 0.3s ease, left 0.3s ease, opacity 0.3s ease;
               opacity: 0;
+            }
+
+            &:hover {
+              &::before {
+                width: 50%;
+                opacity: 1;
+              }
+            }
+
+            &:not(:hover) {
+              &::before {
+                width: 0%;
+                opacity: 0;
+              }
             }
           }
         }
