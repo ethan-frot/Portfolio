@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Main -->
+    <url>
+        <loc>https://ethanfrot.com/</loc>
+    </url>
+
+    <!-- Fr version -->
+    <url>
+        <loc>https://ethanfrot.com/public/fr.html</loc>
+    </url>
+
+    <!-- Foodies -->
+    <url>
+        <loc>https://foodies.ethanfrot.com/</loc>
+    </url>
+
+    <!-- Jessica Aroztegui -->
+    <url>
+        <loc>https://jessica-aroztegui.ethanfrot.com/</loc>
+    </url>
+
+    <!-- Marshall -->
+    <url>
+        <loc>https://marshall.ethanfrot.com/</loc>
+    </url>
+
+    <!-- Eva VR -->
+    <url>
+        <loc>https://eva-vr.ethanfrot.com/</loc>
+    </url>
+
+    <!-- Challenge Bootstrap -->
+    <url>
+        <loc>https://challenge-bootstrap.ethanfrot.com/</loc>
+    </url>
+
+    <!-- Switch playground -->
+    <url>
+        <loc>https://switch-playground.ethanfrot.com/</loc>
+    </url>
+
+    <!-- Recipe JS -->
+    <url>
+        <loc>https://recipe-js.ethanfrot.com/</loc>
+    </url>
+
+    <!-- Travee -->
+    <url>
+        <loc>https://travee.ethanfrot.com/</loc>
+    </url>
+
+    <!-- CSS Animation -->
+    <url>
+        <loc>https://animation-css.ethanfrot.com/</loc>
+    </url>
+
+</urlset>

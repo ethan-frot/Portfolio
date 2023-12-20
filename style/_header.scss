@@ -78,6 +78,16 @@ header {
         }
       }
     }
+
+    & .language-content {
+      position: absolute;
+      top: 40px;
+      right: 70px;
+      & .language {
+        display: flex;
+        width: 30px;
+      }
+    }
   }
 }
 
@@ -89,7 +99,7 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: 100px;
-  margin-top: 150px;
+  margin-top: 100px;
 
   & .header-title-container {
     display: flex;
@@ -111,6 +121,10 @@ header {
       font-weight: 800;
       line-height: 70px;
       letter-spacing: 5px;
+    }
+
+    & .fr {
+      font-size: 55px;
     }
   }
 

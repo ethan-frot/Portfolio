@@ -65,6 +65,15 @@ header .navbar .nav-content .nav-container .nav-items .nav-item:not(:hover)::bef
   width: 0%;
   opacity: 0;
 }
+header .navbar .language-content {
+  position: absolute;
+  top: 40px;
+  right: 70px;
+}
+header .navbar .language-content .language {
+  display: flex;
+  width: 30px;
+}
 
 .header-container {
   display: flex;
@@ -74,7 +83,7 @@ header .navbar .nav-content .nav-container .nav-items .nav-item:not(:hover)::bef
   justify-content: space-between;
   align-items: center;
   gap: 100px;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 .header-container .header-title-container {
   display: flex;
@@ -93,6 +102,9 @@ header .navbar .nav-content .nav-container .nav-items .nav-item:not(:hover)::bef
   font-weight: 800;
   line-height: 70px;
   letter-spacing: 5px;
+}
+.header-container .header-title-container .fr {
+  font-size: 55px;
 }
 .header-container .illustrations .illustration {
   width: 100%;
@@ -323,7 +335,7 @@ header .navbar .nav-content .nav-container .nav-items .nav-item:not(:hover)::bef
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 100px;
+  gap: 50px;
 }
 #about-me .presentation {
   max-width: 750px;
@@ -358,6 +370,37 @@ header .navbar .nav-content .nav-container .nav-items .nav-item:not(:hover)::bef
   display: flex;
   width: 32px;
   height: 32px;
+}
+#about-me .sitemap {
+  display: flex;
+  gap: 48px;
+  cursor: pointer;
+}
+#about-me .sitemap .sitemap-item {
+  all: unset;
+  color: var(--secondary-main);
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+}
+#about-me .sitemap .sitemap-item::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  top: 20px;
+  border-radius: 8px;
+  background: var(--secondary-main);
+  transition: width 0.3s ease, left 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+#about-me .sitemap .sitemap-item:hover::before {
+  width: 100%;
+  opacity: 1;
+}
+#about-me .sitemap .sitemap-item:not(:hover)::before {
+  width: 0%;
+  opacity: 0;
 }
 
 :root {

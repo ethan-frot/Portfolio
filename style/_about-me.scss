@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 100px;
+  gap: 50px;
 
   & .presentation {
     max-width: 750px;
@@ -44,6 +44,46 @@
       display: flex;
       width: 32px;
       height: 32px;
+    }
+  }
+
+  & .sitemap {
+    display: flex;
+    gap: 48px;
+    cursor: pointer;
+
+    & .sitemap-item {
+      all: unset;
+      color: var(--secondary-main);
+      font-size: 12px;
+      font-weight: 400;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 1px;
+        top: 20px;
+        border-radius: 8px;
+        background: var(--secondary-main);
+        transition: width 0.3s ease, left 0.3s ease, opacity 0.3s ease;
+        opacity: 0;
+      }
+
+      &:hover {
+        &::before {
+          width: 100%;
+          opacity: 1;
+        }
+      }
+
+      &:not(:hover) {
+        &::before {
+          width: 0%;
+          opacity: 0;
+        }
+      }
     }
   }
 }
