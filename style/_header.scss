@@ -80,14 +80,15 @@ header {
     }
 
     & .language-content {
-      position: absolute;
-      top: 40px;
-      right: 70px;
       & .language {
         display: flex;
         width: 30px;
       }
     }
+  }
+
+  & .mobile-navbar {
+    display: none;
   }
 }
 
