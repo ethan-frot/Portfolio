@@ -557,8 +557,14 @@ header .mobile-navbar {
   }
 }
 @media (max-width: 750px) {
+  header .header-container .header-title-container h1 {
+    font-size: 20px;
+  }
+  header .header-container .header-title-container .text-stroke {
+    font-size: 60px;
+  }
   header .header-container .illustrations {
-    width: 60%;
+    width: 70%;
   }
   header .navbar {
     display: none;

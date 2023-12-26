@@ -80,8 +80,18 @@
   // Header
   header {
     & .header-container {
+      & .header-title-container {
+        & h1 {
+          font-size: 20px;
+        }
+
+        & .text-stroke {
+          font-size: 60px;
+        }
+      }
+
       & .illustrations {
-        width: 60%;
+        width: 70%;
       }
     }
 
