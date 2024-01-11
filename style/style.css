@@ -97,12 +97,10 @@ body {
 }
 
 header {
-  height: 100%;
-  max-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 64px;
+  gap: 70px;
 }
 header .navbar {
   display: flex;
@@ -112,7 +110,7 @@ header .navbar {
   align-items: center;
   padding: 24px 64px 0px 64px;
   position: fixed;
-  z-index: 2;
+  z-index: 20;
 }
 header .navbar .nav-content {
   display: flex;
@@ -171,7 +169,6 @@ header .mobile-navbar {
 
 .header-container {
   display: flex;
-  height: 100%;
   width: 100%;
   max-width: 950px;
   justify-content: space-between;
@@ -197,17 +194,12 @@ header .mobile-navbar {
   line-height: 70px;
   letter-spacing: 5px;
 }
-.header-container .header-title-container .fr {
-  font-size: 55px;
-}
 .header-container .illustrations .illustration {
   width: 100%;
-  height: 100%;
 }
 
 .chevron-levitation {
   margin-bottom: 10px;
-  height: 50px;
   cursor: pointer;
 }
 .chevron-levitation a {
@@ -220,42 +212,22 @@ header .mobile-navbar {
 
 #projects {
   width: 100%;
-  height: 100%;
-  max-height: 100vh;
+  padding-top: 200px;
   position: relative;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#projects .chevrons {
-  cursor: pointer;
-  z-index: 2;
-}
-#projects .chevrons .chevron-left {
-  width: 30px;
-  position: absolute;
-  top: 50vh;
-  left: 10px;
-  margin-left: 50px;
-}
-#projects .chevrons .chevron-right {
-  width: 30px;
-  position: absolute;
-  top: 50vh;
-  right: 10px;
-  margin-right: 50px;
-}
 #projects .cards {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
 }
 #projects .cards .card {
   width: 100%;
-  height: 100%;
+  padding: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -263,8 +235,8 @@ header .mobile-navbar {
 }
 #projects .cards .card .mok-up {
   display: flex;
-  width: 40%;
-  height: 55%;
+  width: 50%;
+  padding-bottom: 450px;
   border-radius: 8px;
   background-image: url(/assets/mok-up-music-dashboard.png);
   background-repeat: no-repeat;
@@ -272,7 +244,6 @@ header .mobile-navbar {
   background-position: center;
   box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, 0.5);
   gap: 6px;
-  padding: 10px 0px 0px 10px;
 }
 #projects .cards .card .mok-up .logo-container {
   display: flex;
@@ -283,6 +254,7 @@ header .mobile-navbar {
   align-items: center;
   background: var(--background--opactity);
   border-radius: 6px;
+  margin: 3px 0px 0px 3px;
 }
 #projects .cards .card .mok-up .logo-container .mok-up-logo {
   max-width: 48px;
@@ -292,14 +264,13 @@ header .mobile-navbar {
 }
 #projects .cards .card .card-container {
   width: 30%;
-  height: 45%;
   border-radius: 0px 12px 12px 0px;
   background: var(--primary-bg);
 }
 #projects .cards .card .card-container .card-content-container {
   position: relative;
   width: 100%;
-  height: 100%;
+  padding: 50px 0px 50px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -420,18 +391,26 @@ header .mobile-navbar {
   background-size: contain;
 }
 #projects .swiper-pagination {
-  display: none;
+  display: flex;
+  justify-content: center;
+}
+#projects .swiper-pagination .swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  background-color: var(--primary-bg);
+}
+#projects .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--primary-main);
 }
 
 #about-me {
   width: 100%;
-  height: 100%;
-  max-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 50px;
+  padding: 350px 0px 20px 0px;
 }
 #about-me .presentation {
   max-width: 750px;
@@ -503,10 +482,11 @@ header .mobile-navbar {
 @media (max-width: 1200px) {
   #projects .cards .card {
     flex-direction: column;
+    padding-top: 0px;
   }
   #projects .cards .card .mok-up {
     width: 35%;
-    height: 25%;
+    padding-bottom: 250px;
     position: relative;
     top: 150px;
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
@@ -522,20 +502,20 @@ header .mobile-navbar {
   }
   #projects .cards .card .card-container {
     width: 50%;
-    height: 50%;
     border-radius: 12px 12px 12px 12px;
   }
   #projects .cards .card .card-container .card-content-container {
-    margin-top: 50px;
+    margin-top: 130px;
+    padding-bottom: 100px;
   }
   #projects .cards .card .card-container .card-content-container .frame {
-    top: 85px;
+    top: 5px;
     right: 44%;
     left: 44%;
   }
   #projects .cards .card .card-container .card-content-container .card-content {
     position: absolute;
-    bottom: 15px;
+    bottom: -40px;
   }
   #projects .cards .card .card-container .card-content-container .card-content a {
     width: 70%;
@@ -555,13 +535,19 @@ header .mobile-navbar {
   header .header-container .illustrations {
     width: 50%;
   }
+  #projects .cards .card .mok-up {
+    width: 60%;
+  }
+  #projects .cards .card .card-container {
+    width: 70%;
+  }
 }
 @media (max-width: 750px) {
   header .header-container .header-title-container h1 {
-    font-size: 20px;
+    font-size: 18px;
   }
   header .header-container .header-title-container .text-stroke {
-    font-size: 60px;
+    font-size: 36px;
   }
   header .header-container .illustrations {
     width: 70%;
@@ -632,6 +618,7 @@ header .mobile-navbar {
     list-style: none;
     text-align: center;
     width: 100%;
+    padding: 0px;
   }
   header .mobile-navbar .nav-content .mobile-menu-burger .menu-burger .item {
     margin: 1rem;
@@ -654,27 +641,16 @@ header .mobile-navbar {
   header .mobile-navbar .nav-content .mobile-menu-burger .checkbox:checked ~ .menu-burger {
     opacity: 1;
     width: 100%;
+    height: 100%;
     right: 0;
   }
-  #projects .chevrons {
-    display: none;
+  #projects .cards .card {
+    padding: 0px 20px 100px 20px;
   }
   #projects .cards .card .mok-up {
-    width: 70%;
+    width: 90%;
   }
   #projects .cards .card .card-container {
-    width: 80%;
-  }
-  #projects .swiper-pagination {
-    display: flex;
-    justify-content: center;
-  }
-  #projects .swiper-pagination .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background-color: var(--primary-bg);
-  }
-  #projects .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: var(--primary-main);
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

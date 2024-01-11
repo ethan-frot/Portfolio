@@ -4,10 +4,11 @@
     & .cards {
       & .card {
         flex-direction: column;
+        padding-top: 0px;
 
         & .mok-up {
           width: 35%;
-          height: 25%;
+          padding-bottom: 250px;
           position: relative;
           top: 150px;
           box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
@@ -26,21 +27,21 @@
 
         & .card-container {
           width: 50%;
-          height: 50%;
           border-radius: 12px 12px 12px 12px;
 
           & .card-content-container {
-            margin-top: 50px;
+            margin-top: 130px;
+            padding-bottom: 100px;
 
             & .frame {
-              top: 85px;
+              top: 5px;
               right: 44%;
               left: 44%;
             }
 
             & .card-content {
               position: absolute;
-              bottom: 15px;
+              bottom: -40px;
 
               & a {
                 width: 70%;
@@ -73,6 +74,21 @@
       }
     }
   }
+
+  // Projects
+  #projects {
+    & .cards {
+      & .card {
+        & .mok-up {
+          width: 60%;
+        }
+
+        & .card-container {
+          width: 70%;
+        }
+      }
+    }
+  }
 }
 
 // Under Tablet (Phone, and other)
@@ -82,11 +98,11 @@
     & .header-container {
       & .header-title-container {
         & h1 {
-          font-size: 20px;
+          font-size: 18px;
         }
 
         & .text-stroke {
-          font-size: 60px;
+          font-size: 36px;
         }
       }
 
@@ -175,6 +191,7 @@
               list-style: none;
               text-align: center;
               width: 100%;
+              padding: 0px;
             }
 
             & .item {
@@ -204,6 +221,7 @@
           & .checkbox:checked ~ .menu-burger {
             opacity: 1;
             width: 100%;
+            height: 100%;
             right: 0;
           }
         }
@@ -213,34 +231,17 @@
 
   // Projects
   #projects {
-    & .chevrons {
-      display: none;
-    }
-
     & .cards {
       & .card {
+        padding: 0px 20px 100px 20px;
+
         & .mok-up {
-          width: 70%;
+          width: 90%;
         }
 
         & .card-container {
-          width: 80%;
+          width: 100%;
         }
-      }
-    }
-
-    & .swiper-pagination {
-      display: flex;
-      justify-content: center;
-
-      & .swiper-pagination-bullet {
-        width: 12px;
-        height: 12px;
-        background-color: var(--primary-bg);
-      }
-
-      & .swiper-pagination-bullet-active {
-        background-color: var(--primary-main);
       }
     }
   }
