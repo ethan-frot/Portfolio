@@ -239,4 +239,13 @@
       background-color: var(--primary-main);
     }
   }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 30px;
+    height: 30px;
+    padding: 0px 50px 0px 50px;
+    margin-top: 50px;
+    color: #fff;
+  }
 }

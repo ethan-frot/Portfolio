@@ -87,3 +87,93 @@
     }
   }
 }
+
+#about-me {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 350px 0px 20px 0px;
+
+  & .presentation {
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 50px;
+    color: var(--secondary-main);
+
+    & .presentation-subtitle {
+      background: var(--secondary-bg);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      padding: 0px 40px 0px 40px;
+    }
+  }
+
+  & .social-container {
+    width: 100%;
+    max-width: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    & .github {
+      display: flex;
+      width: 64px;
+    }
+
+    & .linkedin,
+    .mail {
+      display: flex;
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  & .sitemap {
+    display: flex;
+    gap: 48px;
+    cursor: pointer;
+
+    & .sitemap-item {
+      all: unset;
+      color: var(--secondary-main);
+      font-size: 12px;
+      font-weight: 400;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 1px;
+        top: 20px;
+        border-radius: 8px;
+        background: var(--secondary-main);
+        transition: width 0.3s ease, left 0.3s ease, opacity 0.3s ease;
+        opacity: 0;
+      }
+
+      &:hover {
+        &::before {
+          width: 100%;
+          opacity: 1;
+        }
+      }
+
+      &:not(:hover) {
+        &::before {
+          width: 0%;
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
