@@ -9,7 +9,7 @@ const swiper = new Swiper(".swiper-container", {
   slidesPerView: 1,
   spaceBetween: 10,
   loop: true,
-  initialSlide: 2,
+  initialSlide: 1,
   speed: 400,
   spaceBetween: 100,
   autoplay: {

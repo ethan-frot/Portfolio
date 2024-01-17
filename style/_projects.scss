@@ -192,14 +192,6 @@
       }
     }
 
-    .recipe-js {
-      & .mok-up {
-        background-image: url(/assets/mok-up-recipe-js.png);
-        background-color: #808080;
-        background-size: contain;
-      }
-    }
-
     .switch-playground {
       & .mok-up {
         background-image: url(/assets/mok-up-switch-playground.png);
@@ -221,6 +213,12 @@
         background-image: url(/assets/mok-up-eva-vr.png);
         background-color: #080524;
         background-size: contain;
+      }
+    }
+
+    .gta-vi {
+      & .mok-up {
+        background-image: url(/assets/mok-up-gta-vi.png);
       }
     }
   }

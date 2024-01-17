@@ -581,11 +581,6 @@ header .mobile-navbar {
 #projects .cards .marshall .mok-up {
   background-image: url(/assets/mok-up-marshall.png);
 }
-#projects .cards .recipe-js .mok-up {
-  background-image: url(/assets/mok-up-recipe-js.png);
-  background-color: #808080;
-  background-size: contain;
-}
 #projects .cards .switch-playground .mok-up {
   background-image: url(/assets/mok-up-switch-playground.png);
   background-color: #2f3731;
@@ -600,6 +595,9 @@ header .mobile-navbar {
   background-image: url(/assets/mok-up-eva-vr.png);
   background-color: #080524;
   background-size: contain;
+}
+#projects .cards .gta-vi .mok-up {
+  background-image: url(/assets/mok-up-gta-vi.png);
 }
 #projects .swiper-pagination {
   display: flex;
